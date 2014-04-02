@@ -1,0 +1,27 @@
+body {
+    background-color: olive;
+    font-family: "Helvetica", Arial;
+    font-size: 16px;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 10px 10px 0.5em rgba(0,0,0,0.5);
+}
+
+table {
+    background-color: #fff;
+}
+
+th {
+    background-color: #88a8be;
+}
+
+h3 {
+    border: 1px  solid;
+    border-color: #5B8DEA;
+    text-align: center;
+    color: #990000;
+}

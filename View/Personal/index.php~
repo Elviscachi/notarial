@@ -1,0 +1,54 @@
+<?php
+session_start();
+if (isset($_SESSION["personal"])) {
+    require_once '../../Model/cone.php';
+    $link = new conexionclass();
+    $link->Conectado();
+
+    $codigo_usuario = $_SESSION['personal'];
+
+    $fecha_ini = date("Y-m-d");
+    $sql = "SELECT CONCAT(nom_usu,' ',pat_usu,' ',mat_usu) AS Trabajador FROM usuarios WHERE cod_usu = $codigo_usuario";
+    $query = $link->consulta($sql);
+    $dato1 = $link->fetch_array($query);
+?>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+            <link rel="stylesheet" type="text/css" href="../../css/style_ingreso.css" />
+            <title>Inicio - ARP</title>
+        </head>
+        <body>
+            <table width="1055" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="600" rowspan="2"><img src="../imagenes/Banner2.jpg" alt="banner" width="600" height="100" /></td>
+                    <td height="55" class="ingreso">Usuario en el Sistema:<span class="menuSuperior"> <?php echo $dato1["Trabajador"];?>  </span></td>
+                </tr>	
+                <tr>
+                    <td><a href="../../Controler/session_close.php">Salir del Sistema</a><span class="menuSuperior"><a href="../Admin1/report_personal.php?trab=<?php echo $codigo_usuario ?>&fecha_ini=<?php echo $fecha_ini ?>"> |    Ver mis ingreso del Dia</a></span></td>
+
+                </tr>
+
+            </table>
+            <br />
+            <table width="523" height="139" border="0" align="center" >
+                <tr>
+                    <td align="center"><img src="../imagenes/ingreso.png" alt="b" width="108" height="82" /></td>
+                    <td align="center"><img src="../imagenes/buscar.png" alt="a" width="102" height="101" /></td>
+                    <td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center"><input name="Buscar" type="button" class="boton" value="Ingresar Escritura" onclick="javascript:location.href='./otorgantes.php'"/></td>                    
+                    <td align="center"><input name="Salir" type="button" class="boton" value="Salir" onclick="javascript:location.href='../../index.php'"/></td>
+                </tr>
+            </table>
+        </body>
+    </html>
+<?php
+  }
+  else{
+    header("Location:../../index.php");
+}
+?>

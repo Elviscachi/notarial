@@ -1,0 +1,64 @@
+root {
+    display: block;
+}
+
+body {
+    background-color: #DDDDDD;
+}
+
+p {
+    color: #D96C00;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+table {
+    border: 1px #D96C00 solid;
+    background-color: #BFE3EA;
+    font-family: verdana;
+    font-size: 12px;
+}
+
+input {
+    border: 1px #D96C00 solid;
+    background-color: blanchedalmond;
+    color: black;
+    font-family: verdana;
+    font-size: 12px;
+}
+
+h3 {
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0000CC;
+}
+
+th {
+    background-color: #6699FF;
+}
+
+.boton {
+    background-color: #5B8DEA;
+    border: 1px solid;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 26px;
+}
+
+.boton:hover {
+    background-color: #D96C00;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: bold;
+    color: yellow;
+}

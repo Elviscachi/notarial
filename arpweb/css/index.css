@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 16px;
+	background-color: #3e4f6d; /* fallback color if gradients are not supported */
+background-image: -webkit-linear-gradient(top, hsl(192, 100%, 16%), #3e4f6d);
+
+	background-image: -moz-linear-gradient(top, hsl(192, 100%, 16%), #3e4f6d);
+	background-image: -o-linear-gradient(top, hsl(192, 100%, 16%), #3e4f6d);
+	background-image: -ms-linear-gradient(top, hsl(192, 100%, 16%), #3e4f6d);
+	background-image: linear-gradient(top, hsl(192, 100%, 16%), #3e4f6d); /* Standard syntax;
+	 must be last */
+}
+
+form {
+	padding: 250px 0px;
+	text-align: center;
+}
+
+label {
+	color: white;
+	text-shadow: 0,0,0,0.5;
+	font-size: 20px;
+	font-style: italic;
+}
+
+input {
+	color: black;
+	text-shadow: 0,0,0,0.5;
+	font-family: Georgia;
+	font-size: 14px;
+	font-style: italic;
+}
+
+button {
+	color: white;
+	background: -webkit-gradient(linear, 90% 71%, 90% 0%, from(#004151), to(#0078A3));
+	border: solid 0px #000000;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+	font-family: Georgia;
+	font-size: 14px;
+	font-style: italic;
+	width: 100px;
+	height: 30px;
+}
+
+button:hover {
+	background: -webkit-gradient(linear, 40% 100%, 41% 6%, from(#00509B), to(#009DD1));
+	border: solid 0px #000000;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+
+footer {
+	background: -webkit-gradient(linear, 100% 7%, 100% 100%, from(#1A222E), to(#000000));
+	width: auto;
+	height: 300px;
+	text-align: center;
+}
+
+footer p {
+	text-shadow: 5px 5px 5px #000000;
+	color: white;
+	font-family: arial;
+	font-size: 12px;
+	padding: 10px 20px 10px 20px;
+	display: inline;
+}
+
+#formulario {
+	background-image: url(./img/login2.png);
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#contenedor {
+	background: -webkit-gradient(linear, 90% 71%, 90% 0%, from(#004193), to(#0078B2));
+	background: -moz-gradient(linear, 90% 71%, 90% 0%, from(#004193), to(#0078B2));
+	background: -ms-gradient(linear, 90% 71%, 90% 0%, from(#004193), to(#0078B2));
+	background: -o-gradient(linear, 90% 71%, 90% 0%, from(#004193), to(#0078B2));
+	background: -gradient(linear, 90% 71%, 90% 0%, from(#004193), to(#0078B2));
+}
+
+#capa {
+	padding: 0px 300px;
+	width: 20px;
+	text-align: right;
+}
+
+#logo {
+	padding: 20px 0px;
+}
